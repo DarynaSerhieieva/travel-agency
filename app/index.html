@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Travel</title>
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+    </head>
+    <body class="wrapper">
+        <header class="header">
+            <a class="header__logo" href="#"><img src="img/logo.svg" alt="" class="logo"></a>
+            <nav>
+                <ul class="main-menu">
+                    <li class="main-menu__item"><a href="#">Destination</a></li>
+                    <li class="main-menu__item"><a href="#">Offer </a></li>
+                    <li class="main-menu__item"><a href="#">Tour</a></li>
+                    <li class="main-menu__item"><a href="#">Blog</a></li>
+                </ul>
+            </nav>
+            <div class="header__account">
+                <a href="#">
+                    <svg width="19" height="21" viewBox="0 0 19 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.47277 5.43636C4.47277 8.33636 6.64549 10.6909 9.31822 10.6909C11.9909 10.6909 14.1637 8.33636 14.1637 5.43636C14.1637 2.62727 12.0819 0.5 9.31822 0.5C6.55459 0.5 4.47277 2.62727 4.47277 5.43636ZM5.9364 5.44545C5.9364 3.42727 7.35459 1.96364 9.31822 1.96364C11.2455 1.96364 12.7 3.45455 12.7 5.44545C12.7 7.54545 11.1819 9.24545 9.31822 9.24545C7.45459 9.24545 5.9364 7.53636 5.9364 5.44545ZM0 19.7727C0 20.1727 0.327273 20.5 0.727273 20.5H17.9091C18.3091 20.5 18.6364 20.1727 18.6364 19.7727C18.6364 14.6091 15.3273 11.7636 9.31818 11.7636C3.30909 11.7636 0 14.6091 0 19.7727ZM17.1545 19.0364H1.49091C1.77273 15.1818 4.4 13.2182 9.31818 13.2182C14.2364 13.2182 16.8636 15.1727 17.1545 19.0364Z" fill="#2C2C2C"/>
+                    </svg>
+                    My Account
+                </a>
+                <button class="header__search" type="button"></button>
+            </div>
+        </header>
+        <main>
+            <section class="travel-now">
+                <div class="travel-now__list">
+                    <div class="travel-now__name">
+                        <h1 class="travel-now__name-header">It’s Time To Explore The World</h1>
+                        <button class="button" type="button">Plan Your Trip</button>
+                    </div>
+                    <form class="travel-form">
+                        <fieldset class="travel-form__filter">
+                            <select>
+                                <option>Пункт 1</option>
+                                <option>Пункт 2</option>
+                            </select>
+                            <label>
+                                <input type="date">
+                            </label>
+                            <label>
+                                <input type="number">
+                            </label>
+                        </fieldset>
+                        <a class="travel-form__discover">Discover Now</a>
+                    </form>
+                </div>
+                <a class="arrow" href="#"></a>
+                <a class="arrow arrow-right" href="#"></a>
+                <p class="arrow__counter">03</p>
+            </section>
+        </main>
+        <footer></footer>
+    </body>
+</html>
