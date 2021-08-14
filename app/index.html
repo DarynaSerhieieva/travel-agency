@@ -9,6 +9,9 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
     </head>
     <body class="wrapper">
         <header class="header">
@@ -36,27 +39,104 @@
                 <div class="travel-now__list">
                     <div class="travel-now__name">
                         <h1 class="travel-now__name-header">It’s Time To Explore The World</h1>
-                        <button class="button" type="button">Plan Your Trip</button>
+                        <a href="#" class="button">Plan Your Trip</a>
                     </div>
                     <form class="travel-form">
                         <fieldset class="travel-form__filter">
                             <select>
+                                <option>Arab Egypt</option>
+                                <option>Paris</option>
+                                <option>Japan</option>
+                                <option>Cuba City</option>
+                            </select>
+                            <label>
+                                <input type="date" placeholder="01 Feb, 2021">
+                            </label>
+                            <select>
                                 <option>Пункт 1</option>
                                 <option>Пункт 2</option>
                             </select>
-                            <label>
-                                <input type="date">
-                            </label>
-                            <label>
-                                <input type="number">
-                            </label>
                         </fieldset>
-                        <a class="travel-form__discover">Discover Now</a>
+                        <a class="button button-form">Discover Now</a>
                     </form>
                 </div>
-                <a class="arrow" href="#"></a>
-                <a class="arrow arrow-right" href="#"></a>
-                <p class="arrow__counter">03</p>
+                <div class="slider">
+                    <div class="slider__arrow">
+                        <a class="arrow" href="#">
+                            <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.91875 0.24375C7.06875 0.09375 7.275 0 7.5 0C7.725 0 7.9125 0.09375 8.08125 0.24375L8.56875 0.73125C8.8875 1.05 8.8875 1.575 8.56875 1.89375L2.9625 7.5L8.56875 13.1062C8.71875 13.2562 8.8125 13.4625 8.8125 13.6875C8.8125 13.9125 8.71875 14.1188 8.56875 14.2688L8.08125 14.7562C7.93125 14.9062 7.725 15 7.5 15C7.275 15 7.06875 14.9062 6.91875 14.7562L0.243749 8.08125C0.093749 7.93125 0 7.725 0 7.5C0 7.275 0.093749 7.06875 0.243749 6.91875L6.91875 0.24375Z" fill="white"/>
+                            </svg>
+                        </a>
+                        <a class="arrow arrow-right" href="#">
+                            <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.89375 0.24375C1.74375 0.09375 1.5375 0 1.3125 0C1.0875 0 0.9 0.09375 0.73125 0.24375L0.24375 0.73125C-0.075 1.05 -0.075 1.575 0.24375 1.89375L5.85 7.5L0.24375 13.1062C0.09375 13.2562 0 13.4625 0 13.6875C0 13.9125 0.09375 14.1188 0.24375 14.2688L0.73125 14.7562C0.88125 14.9062 1.0875 15 1.3125 15C1.5375 15 1.74375 14.9062 1.89375 14.7562L8.56875 8.08125C8.71875 7.93125 8.8125 7.725 8.8125 7.5C8.8125 7.275 8.71875 7.06875 8.56875 6.91875L1.89375 0.24375Z" fill="#FF715B"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <span class="slider__line"></span>
+                    <p class="slider__counter">03</p>
+                </div>
+            </section>
+            <section class="explore">
+                <ul class="explore__list">
+                    <li class="explore__item">
+                        <div class="explore__photo">
+                            <img class="photo" src="img/map.png" srcset="../img/map@2x 2x" alt="map">
+                        </div>
+                        <div class="explore__text">
+                            <h3>Choose Destination</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing setting</p>
+                        </div>
+                    </li>
+                    <li class="explore__item">
+                        <div class="explore__photo">
+                            <img class="photo" src="img/binocular.png" srcset="../img/binocular@2x.png 2x" alt="binocular">
+                        </div>
+                        <div class="explore__text">
+                            <h3>Explore The Place</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing setting</p>
+                        </div>
+                    </li>
+                    <li class="explore__item">
+                        <div class="explore__photo">
+                            <img class="photo" src="img/backpack.png" srcset="../img/backpack@2x.png 2x" alt="backpack">
+                        </div>
+                        <div class="explore__text">
+                            <h3>Start Your Journey</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing setting</p>
+                        </div>
+                    </li>
+                    <li class="explore__item">
+                        <div class="explore__photo">
+                            <img class="photo" src="img/ukelele.png" srcset="../img/ukelele@2x.png 2x" alt="ukelele">
+                        </div>
+                        <div class="explore__text">
+                            <h3>Let’s Enjoy</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing setting</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="top-destinations">
+                <div class="top-destinations__content">
+                    <h2>Top <span>Destinations</span> In The World</h2>
+                    <p>It is a long established fact that a reader will be the distracted by the readable content of a page when looking at its layout from it.</p>
+                    <a class="button button-destinations" href="#">Discover More</a>
+                </div>
+                <div class="top-destinations__country">
+                    <div class="top-destinations__img">
+                        <img src="img/cuba-city.jpg" srcset="../img/cuba-city@2x.jpg 2x" alt="cuba-city">
+                        <span>Cuba City</span>
+                    </div>
+                    <div class="top-destinations__img">
+                        <img src="img/paris_city.jpg" srcset="../img/paris_city@2x.jpg 2x" alt="paris">
+                        <span>Paris</span>
+                    </div>
+                    <div class="top-destinations__img">
+                        <img src="img/japan.jpg" srcset="../img/japan@2x.jpg 2x" alt="japan">
+                        <span>Japan</span>
+                    </div>
+                </div>
             </section>
         </main>
         <footer></footer>
