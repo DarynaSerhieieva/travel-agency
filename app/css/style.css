@@ -65,6 +65,10 @@ a {
   color: #2c2c2c;
 }
 
+.header a:hover {
+  color: #ff715b;
+}
+
 .header__account {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -87,6 +91,7 @@ a {
   border: none;
   margin-left: 35px;
   position: relative;
+  cursor: pointer;
 }
 
 .header__search::before {
@@ -97,6 +102,7 @@ a {
   position: absolute;
   top: 0;
   left: -15px;
+  cursor: auto;
 }
 
 .main-menu {
@@ -158,6 +164,10 @@ a {
   color: white;
   background: #ff715b;
   padding: 18px 36.5px;
+}
+
+.button:hover {
+  background: #f3553d;
 }
 
 .button.button-form {
@@ -290,6 +300,10 @@ a {
   background-color: #ff715b;
 }
 
+.arrow:hover {
+  background-color: #f3553d;
+}
+
 .arrow:not(:last-child) {
   margin-right: 20px;
 }
@@ -297,6 +311,10 @@ a {
 .arrow-right {
   background: transparent;
   border-color: #f5ebe9;
+}
+
+.arrow-right:hover {
+  background-color: #f5ebe9;
 }
 
 .slider {
@@ -387,6 +405,16 @@ a {
 
 .top-destinations__img {
   position: relative;
+  cursor: pointer;
+}
+
+.top-destinations__img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition-duration: 0.6s;
+          transition-duration: 0.6s;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
 }
 
 .top-destinations__img:not(:last-child) {
