@@ -39,23 +39,30 @@
                 <div class="travel-now__list">
                     <div class="travel-now__name">
                         <h1 class="travel-now__name-header">It’s Time To Explore The World</h1>
-                        <a href="#" class="button">Plan Your Trip</a>
+                        <a href="#" class="button button-travel">Plan Your Trip</a>
                     </div>
                     <form class="travel-form">
                         <fieldset class="travel-form__filter">
-                            <select>
-                                <option>Arab Egypt</option>
-                                <option>Paris</option>
-                                <option>Japan</option>
-                                <option>Cuba City</option>
-                            </select>
-                            <label>
-                                <input type="date" placeholder="01 Feb, 2021">
-                            </label>
-                            <select>
-                                <option>Пункт 1</option>
-                                <option>Пункт 2</option>
-                            </select>
+                            <div class="travel-form__item">
+                                <label>Destinations</label>
+                                <select class="travel-form__item-arrow focus-visible">
+                                    <option>Arab Egypt</option>
+                                    <option>Paris</option>
+                                    <option>Japan</option>
+                                    <option>Cuba City</option>
+                                </select>
+                            </div>
+                            <div class="travel-form__item">
+                                <label>Check In</label>
+                                <input class="travel-form__item-calender focus-visible" type="date"min="2021-02-01" max="2022-04-30" value="2021-02-01">
+                            </div>
+                            <div class="travel-form__item">
+                                <label>Price Range</label>
+                                <select class="travel-form__item-dollar focus-visible">
+                                    <option>$500 - $10,0000</option>
+                                    <option>$10,0000 - $20,0000</option>
+                                </select>
+                            </div>
                         </fieldset>
                         <a class="button button-form">Discover Now</a>
                     </form>
@@ -121,7 +128,7 @@
                 <div class="top-destinations__content">
                     <h2 class="heading">Top <span>Destinations</span> In The World</h2>
                     <p class="text-lexend">It is a long established fact that a reader will be the distracted by the readable content of a page when looking at its layout from it.</p>
-                    <a class="button button-destinations" href="#">Discover More</a>
+                    <a class="button button-top-destinations" href="#">Discover More</a>
                 </div>
                 <div class="top-destinations__country">
                     <div class="top-destinations__img">
@@ -250,7 +257,7 @@
                                     <span>5k Reviews</span>
                                 </div>
                             </div>
-                            <button type="button">+</button>
+                            <button class="button button-plus" type="button">+</button>
                         </div>
                     </article>
                     <article class="destination__item destination__item-up">
@@ -274,7 +281,7 @@
                                     <span>5k Reviews</span>
                                 </div>
                             </div>
-                            <button type="button">+</button>
+                            <button class="button button-plus" type="button">+</button>
                         </div>
                     </article>
                     <article class="destination__item">
@@ -298,11 +305,11 @@
                                     <span>5k Reviews</span>
                                 </div>
                             </div>
-                            <button type="button">+</button>
+                            <button class="button button-plus" type="button">+</button>
                         </div>
                     </article>
                 </div>
-                <a class="button" href="#">View All Places</a>
+                <a class="button button-destinations" href="#">View All Places</a>
             </section>
             <section class="reviews">
                 <h2 class="heading">What Our Happy Customers Say About Us</h2>
@@ -339,11 +346,11 @@
                     <h2 class="heading">Download Now Travel Community Apps</h2>
                     <div class="download__app">
                         <a href="#"><img src="img/google_play.svg" width="204" height="60" alt="google play"></a>
-                        <a href="#"><img src="img/apple_store.svg"width="203" height="60" alt="apple store"></a>
+                        <a href="#"><img src="img/apple_store.svg" width="203" height="60" alt="apple store"></a>
                     </div>
                 </div>
                 <div class="download__img">
-                    <img src="img/logo.svg" width="174" height="45" alt="logo">
+                    <img src="img/logo.svg" width="174" height="45" alt="logo" class="photo">
                     <img src="img/bagpack.png" srcset="img/bagpack@2x.png 2x" alt="backpack" class="photo">
                     <img src="img/screen.png" srcset="img/screen@2x.png 2x" alt="screen" class="photo">
                     <img src="img/airplane.png" srcset="img/airplane@2x.png 2x" alt="airplane" class="photo">
@@ -358,12 +365,12 @@
                     <img src="img/logo.svg" width="174" height="45" alt="logo">
                     <p class="text-lexend">You can dream, create, design, and buildsa the most wonderful place.</p>
                     <ul class="contact">
-                        <li class="contact__item"><a class="text-lexend" href="tel:+0123 456 987, +0123 456 987">+0123 456 987, +0123 456 987</a></li>
+                        <li class="contact__item"><a class="text-lexend" href="tel:+0123456987">+0123 456 987, +0123 456 987</a></li>
                         <li class="contact__item"><a class="text-lexend" href="mailto:yourmailaddress@gmail.com">yourmailaddress@gmail.com</a></li>
                         <li class="contact__item"><a class="text-lexend" target="_blank" href="http://www.yourwebsitename.com">www.yourwebsitename.com</a></li>
                     </ul>
                 </article>
-                <article class="footer__item">
+                <article class="footer__item links-margin">
                     <h3>Quick Links</h3>
                     <ul class="links">
                         <li class="links__item"><a class="text-lexend" href="">About Us</a></li>
@@ -373,7 +380,7 @@
                         <li class="links__item"><a class="text-lexend" href="">Contact Us</a></li>
                     </ul>
                 </article>
-                <article class="footer__item">
+                <article class="footer__item links-margin">
                     <h3>Support</h3>
                     <ul class="links">
                         <li class="links__item"><a class="text-lexend" href="">Customer Support</a></li>
@@ -383,13 +390,13 @@
                         <li class="links__item"><a class="text-lexend" href="">Tour Guid</a></li>
                     </ul>
                 </article>
-                <article class="footer__item">
+                <article class="footer__item newsletter">
                     <h3>Newsletter</h3>
-                    <textarea class="text-lexend" name="" id="" cols="30" rows="10"></textarea>
-                    <button class="button" type="submit">Subscribe Now</button>
+                    <textarea class="text-lexend newsletter__textarea" name="newsletter" wrap="soft" cols="40" rows="20"></textarea>
+                    <button class="button button-footer" type="submit">Subscribe Now</button>
                 </article>
             </section>
-            <p>Copyright @2020 Ravel. Designed By Md Shamim Hossain</p>
+            <p class="text-lexend">Copyright @2020 Ravel. Designed By <span>Md Shamim Hossain</span></p>
         </footer>
     </body>
 </html>
